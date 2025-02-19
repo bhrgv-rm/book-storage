@@ -1,0 +1,20 @@
+meta {
+  name: addUser
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/user/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Ben Zameen",
+    "userName": "ben_zam",
+    "email": "ben@z.com",
+    "password": "benz123"
+  }
+}

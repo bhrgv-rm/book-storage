@@ -1,0 +1,19 @@
+meta {
+  name: updateBook
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/book/update/6fc0b299-d278-4575-bde1-9c1d0da29c95
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "to a book",
+    "author":"ben jamee",
+    "link": "toapd"
+  }
+}

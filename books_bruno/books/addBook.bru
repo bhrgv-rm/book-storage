@@ -1,0 +1,24 @@
+meta {
+  name: addBook
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/book/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Learning Spring Boot",
+    "author": "John Doe",
+    "owner": {
+      "id": "d2e92679-83c6-41d6-be08-32326ad7b77a"
+    },
+    "privateBook": false,
+    "link": "https://example.com/learning-spring-boot"
+  }
+  
+}
